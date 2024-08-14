@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "iranSans";
+  src: url(./fonts/woff2/IRANSansWeb\(FaNum\).woff2);
+}
+
+:root {
+  --primary: #5a493f;
+  --primaryLight: #c49b83;
+  --black1: #000;
+  --black2: #00000070;
+  --black3: #00000015;
+  --white1: #fff;
+  --white2: #ffffff70;
+  --white3: #ffffff15;
+  --gray: rgb(191, 191, 191);
+  --green: #51d451;
+  --red: #dc5353;
+}
+body {
+  background-color: rgb(251, 251, 251);
+}
+
+* {
+  font-family: "iranSans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+.validation {
+  background-color: var(--white1);
+  width: 100%;
+  height: 100vh;
+}
+
+.signUp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUp form {
+  width: 27rem;
+  height: auto;
+  box-shadow: 0 10px 45px var(--gray);
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.signUp-form__title {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+}
+.signUp-form__subtitle {
+  margin-bottom: 2rem;
+}
+.signUp-form__subtitle a {
+  color: var(--primaryLight);
+  font-weight: 900;
+}
+.input-signUp {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-signUp input {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 2.7rem;
+  background-color: var(--black3);
+  border-radius: 0.3rem;
+  padding: 0 0.5rem;
+}
+.input-signUp i {
+  position: absolute;
+  left: 0.7rem;
+  top: 22%;
+}
+.signUpBtn {
+  background-color: var(--primaryLight);
+  width: 100%;
+  height: 2.7rem;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  color: var(--white1);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.signUpBtn:hover {
+  background-color: var(--primary);
+}
+
+.errorContainer {
+  position: fixed;
+  width: 100%;
+  top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.validation-msgF,
+.validation-msgT {
+  width: 90%;
+  text-align: center;
+  direction: ltr;
+  color: red;
+  margin-top: 1.3rem;
+  display: none;
+  font-size: 1rem;
+  /* background-color: rgb(228, 153, 153);
+  border: 2px solid red; */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.validation-msgT {
+  color: green;
+  /* background-color: rgb(153, 228, 159);
+  border: 2px solid green; */
+}
+
+@media (max-width: 800px) {
+  .signUp-right {
+    width: 100%;
+  }
+  .signUp-left {
+    display: none;
+  }
+  .signUp-right form {
+    width: 95%;
+  }
+}
+
+/************users***********/
+table {
+  width: 100%;
+  text-align: left;
+}
+table td,
+table tr th {
+  padding: 0.5rem;
+}
